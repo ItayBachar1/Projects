@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+
+<body style = "background-color: cornflowerblue">
+<a href="{% url 'Query' %}" style="position: absolute;  left: 25px; top: 10px">Query Results</a><br>
+<a href="{% url 'Add' %}" style="position: absolute;  left: 25px; top: 30px">Add Transaction</a><br>
+<a href="{% url 'Buy' %}" style="position: absolute;  left: 25px; top: 50px">Buy Stocks</a><br>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h1 style="text-align: center">Welcome to the Stocks Website</h1>
+<img src="{% static "Stocks.PNG" %}" alt = "Stock" style="float: right ;width:1700px;height:800px;"/>
+</body>
+</html>
