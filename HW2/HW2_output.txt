@@ -1,0 +1,63 @@
+Sorting by size:
+A
+|    Aa.txt
+|    aa.py
+|    B
+|    |    bye.log
+|    |    C
+|    |    |    code.java
+
+
+Sorting by name:
+A
+|    Aa.txt
+|    B
+|    |    C
+|    |    |    code.java
+|    |    bye.log
+|    aa.py
+
+
+Sorting by date:
+A
+|    B
+|    |    C
+|    |    |    code.java
+|    |    bye.log
+|    Aa.txt
+|    aa.py
+
+
+File has been found: aa.py
+aa.py Size: 20MB Created: 2021-11-14 10:03:13.182
+print("Hello World")
+
+
+File does not exist: B/code.java
+
+
+File has been found: B/C/code.java
+code.java Size: 75MB Created: 2021-02-09 21:19:05.272
+class A {
+    public A() {
+        System.out.println("Hey there");
+    }
+}
+
+
+File does not exist: AA.txt
+
+
+Testing
+|    temp1
+|    |    temp2
+|    |    |    temp3
+|    |    |    |    temp4
+|    |    |    |    |    temp5
+|    |    |    |    |    |    temp6
+|    |    |    |    |    |    |    temp7
+|    |    |    |    |    |    |    |    temp8
+|    |    |    |    |    |    |    |    |    temp9
+|    |    |    |    |    |    |    |    |    |    temp10
+|    |    |    |    |    |    |    |    |    |    |    test1.cs
+|    |    |    |    |    |    |    |    |    |    |    test2.cs
