@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Stocks</title>
+</head>
+<h1>Buy Stocks</h1>
+<a href="{% url 'index' %} " style="position: absolute;  left: 25px; top: 10px; " >Home</a><br>
+<a href="{% url 'Query' %}" style="position: absolute;  left: 25px; top: 30px;">Query Results</a><br>
+<a href="{% url 'Add' %}" style="position: absolute;  left: 25px; top: 50px;">Add Transaction</a><br>
+<body style = "background-color: cornflowerblue; text-align: center">
+    {% if errorS %}
+        <h2 style="color: crimson; font-size: 50px"> ERROR - The symbol isn't exist in the system! </h2>
+    {% endif %}
+    {% if errorID %}
+        <h2 style="color: crimson; font-size: 50px"> ERROR - Your ID doesn't exist in the system! </h2>
+    {% endif %}
+    {% if errorC %}
+        <h2 style="color: crimson; font-size: 50px"> ERROR - You don't have enough cash in your account! </h2>
+    {% endif %}
+    {% if errorT %}
+        <h2 style="color: crimson; font-size: 50px"> ERROR - You already purchased this stock today, try next time! </h2>
+    {% endif %}
+<form method="POST">
+    {% csrf_token %}
+    ID:<input type="number" name="ID" minlength="2" maxlength="50" style="margin-left: 50px"></input><br>
+    Company:<textarea name="Company" maxlength="50" style="margin-left: 5px"></textarea><br>
+    Quantity:<input type="number" name="Quantity" min="1" maxlength="50" style="margin-left: 12px"></input><br>
+    <input type="submit">
+</form>
+
+    <h1 style="text-align: center">10 Top Purchases:</h1>
+    <br>
+    <br>
+    <table border="1" width="40%" align="center">
+        <th>Date</th>
+        <th>Investor ID</th>
+        <th>Company</th>
+        <th>Payed</th>
+            {% for res in sql_res1%}
+            <tr><td>{{ res.tdate }}</td><td>{{ res.id }}</td><td>{{ res.symbol }}</td><td>{{ res.price }}</td></tr>
+            {% endfor %}
+        </table>
+
+</body>
+</html>

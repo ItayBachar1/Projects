@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query Results</title>
+</head>
+<a href="{% url 'index' %} " style="position: absolute;  left: 25px" >Home</a><br>
+<a href="{% url 'Buy' %}" style="position: absolute;  left: 25px">Buy Stocks</a><br>
+<a href="{% url 'Add' %}" style="position: absolute;  left: 25px">Add Transaction</a><br>
+<body style = "background-color: cornflowerblue">
+
+<h1 style="text-align: center">Variety Investor(Query 1):</h1>
+<br>
+<br>
+<table border="1" width="40%" align="center">
+<th>Name</th>
+<th>Total Sum</th>
+    {% for res1 in sql_res1%}
+    <tr><td>{{ res1.name }}</td><td>{{ res1.total_amount }}</td></tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+
+<h1 style="text-align: center">Popular Company(Query 2):</h1>
+<br>
+<br>
+<table border="1" width="40%" align="center">
+<th>Symbol</th>
+<th>Name</th>
+<th>Quantity</th>
+    {% for res2 in sql_res2%}
+    <tr><td>{{ res2.symbol }}</td><td>{{ res2.name }}</td><td>{{ res2.max }}</td></tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+<h1 style="text-align: center">A Groycie Meziea(Query 3):</h1>
+<br>
+<br>
+<table border="1" width="40%" align="center">
+<th>Date</th>
+<th>Symbol</th>
+<th>Name</th>
+    {% for res3 in sql_res3%}
+    <tr><td>{{ res3.day1 }}</td><td>{{ res3.symbol }}</td><td>{{ res3.name }}</td></tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+
+</body>
+</html>
