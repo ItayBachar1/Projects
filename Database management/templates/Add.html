@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Transaction</title>
+</head>
+<h1>Add New Transaction</h1>
+<a href="{% url 'index' %} " style="position: absolute;  left: 25px; top: 10px" >Home</a><br>
+<a href="{% url 'Query' %}" style="position: absolute;  left: 25px; top: 30px">Query Results</a><br>
+<a href="{% url 'Buy' %}" style="position: absolute;  left: 25px; top: 50px">Buy Stocks</a><br>
+<body style = "background-color: cornflowerblue; text-align: center">
+
+
+{% if flag %}
+{% else %}
+    <h2 style="color: crimson; font-size: 50px"> ERROR - your input ID doesn't exist in the system! </h2>
+{% endif %}
+
+<form method="POST">
+    {% csrf_token %}
+    ID:<input name="ID" type="number" minlength="1" maxlength="50" style="margin-left: 90px"></input><br>
+    Transaction Sum:<input type="number" name="Transaction" minlength="1" style="margin-left: 0px" ></input><br>
+    <input type="submit">
+</form>
+
+    <h1 style="text-align: center">Last 10 Transactions:</h1>
+    <br>
+    <br>
+    <table border="1" width="40%" align="center"><th>Date</th>
+        <th>Investor ID</th>
+        <th>Transaction Sum</th>
+            {% for res in sql_res%}
+            <tr><td>{{ res.tdate }}</td><td>{{ res.id }}</td><td>{{ res.tquantity }}</td></tr>
+            {% endfor %}
+        </table>
+
+
+</body>
+</html>

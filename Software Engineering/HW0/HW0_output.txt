@@ -1,0 +1,35 @@
+OK
+OK
+OK
+Good
+Very Good
+Excellent
+Great
+OK
+The compressed version of hhgjkkkkklmmn is h2g1j1k5l1m2n1
+The compressed version of aaaaaaaaaaaabfg is a12b1f1g1
+The compressed version of test is t1e1s1t1
+The compressed version of thisISaTESTttttttt is t1h1i1s1I1S1a1T1E1S1T1t7
+The compressed version of testing is t1e1s1t1i1n1g1
+The compressed version of jjjjjjjaaaavvaa is j7a4v2a2
+The compressed version of aaabbbcccdddefffffff is a3b3c3d3e1f7
+The compressed version of lllllllllllllllllmmmnbb is l17m3n1b2
+The compressed version of abcdefgGhIJKLMNOPpppppPPpP is a1b1c1d1e1f1g1G1h1I1J1K1L1M1N1O1P1p5P2p1P1
+The compressed version of xyzzzzzzzzz is x1y1z9
+The decompressed version of a2 is aa
+The decompressed version of c4 is cccc
+The decompressed version of b5f8 is bbbbbffffffff
+The decompressed version of abc2d3 is abcabcddd
+The decompressed version of ef22ghi7 is efefefefefefefefefefefefefefefefefefefefefefghighighighighighighi
+The decompressed version of s3d40gty9 is sssddddddddddddddddddddddddddddddddddddddddgtygtygtygtygtygtygtygtygty
+The decompressed version of test10 is testtesttesttesttesttesttesttesttesttest
+The decompressed version of lkj55nba8 is lkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjlkjnbanbanbanbanbanbanbanba
+The decompressed version of m144kkK2 is mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmkkKkkK
+decompress(compress(abcdddeeeeeeeeeeefgE)) == abcdddeeeeeeeeeeefgE? true
+decompress(compress(nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnlmnoO)) == nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnlmnoO? true
+decompress(compress(KkKkKkKkKkKkKkKkKkKk)) == KkKkKkKkKkKkKkKkKkKk? true
+decompress(compress(lmmmmmnoppPPpppPPPPP)) == lmmmmmnoppPPpppPPPPP? true
+decompress(compress(tttttttttbbbbbbbbbmnkkkkkkjjjiop)) == tttttttttbbbbbbbbbmnkkkkkkjjjiop? true
+decompress(compress(lklklklklklkkkkkkklllllllllllOOOOOOO)) == lklklklklklkkkkkkklllllllllllOOOOOOO? true
+decompress(compress(lmmmmmmmjjjjjjjhhhhhhhIIIIIIiiiiiiIIIII)) == lmmmmmmmjjjjjjjhhhhhhhIIIIIIiiiiiiIIIII? true
+decompress(compress(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbaaa)) == aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbaaa? true
